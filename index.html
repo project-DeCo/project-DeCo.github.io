@@ -61,7 +61,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">From Demonstration to Collaboration: A Framework for Multi-Robot Systems on Long-Horizon Tasks</h1>
+          <h1 class="title is-1 publication-title">DeCo: From Single-Robot Demonstrations to Multi-Robot Collaboration via LLM-Guided Modeling for Long-Horizon Tasks</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">Mai Sun<sup>1</sup>,</span>
             <span class="author-block">
@@ -109,8 +109,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            As robotics expands into manufacturing, logistics, and services, long-horizon tasks (i.e., characterized by extended duration and complex subtask dependencies) pose significant perception and coordination challenges, especially in multi-robot systems. Current approaches, often reliant on single-source data or predefined task structures, struggle with task complexity and deployment heterogeneity, which hinders a transition from demonstrations to multi-robot collaboration. In this paper, we propose a multi-robot collaborative framework termed DeCo, which builds on single-robot long-horizon task demonstrations, systematically addressing task segmentation, subtask modeling, and deployment-aware execution to enable multi-robot collaboration. Our method achieves robust subtask boundary detection by integrating visual features, global optical flow, and local motion cues. Subtasks are represented via structured preconditions and effects, enabling automated construction of a task dependency graph for sequential or parallel execution. A trajectory adaptation strategy aligns robot orientations through coordinate transformations for diverse deployments. We further present DeCoBench, a benchmark comprising 48 long-horizon manipulation tasks to evaluate the transition from single-robot demonstrations to collaborative multi-robot execution. Experiments demonstrate superior segmentation accuracy, dependency modeling, and execution efficiency, validating the effectiveness of the framework in long-horizon tasks. </p>
-        </div>
+            As robotic agents are increasingly deployed in pervasive environments such as smart manufacturing, intelligent logistics, and service systems, long-horizon tasks (i.e., characterized by extended duration and complex subtask dependencies) pose significant perception and coordination challenges, especially in multi-robot systems. However, transferring task knowledge from a single robot to heterogeneous multi-robot systems remains challenging because long-horizon demonstrations do not explicitly reveal subtask boundaries and logical dependencies required for collaborative execution. In this paper, we present DeCo, a framework that transforms synchronized visual and trajectory demonstrations from a single robot into multi-robot collaborative execution. DeCo combines multi-dimensional segmentation to identify subtask boundaries, Large language model-assisted structured task modeling to recover sequential and parallel dependencies, and deployment-aware quaternion adjustment for execution by target robots. We further present DeCoBench, a benchmark comprising 48 long-horizon manipulation tasks and 288 subtasks, designed to evaluate the transition from single-robot demonstrations to collaborative multi-robot execution. Experiments show that DeCo achieves an average task-dependency F1-score of 0.96, while delivering an average execution speedup of $1.41\times$ over single-robot execution.        </div>
       </div>
     </div>
   </div>
